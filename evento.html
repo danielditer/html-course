@@ -28,10 +28,25 @@
     <form action="/index.html" method="post">
         <fieldset>
             <legend>Registrate</legend>
-            <label >Nombre:
-                <input type="text" name="nombre" id="nombre"></input>
+            <label >Edad:
+                <input type="number" name="edad" id="edad" required min="18" max="100">
             </label>
-
+            <label >Nombre:
+                <input type="text" name="nombre" id="nombre" required minlength="2" maxlength="20">
+            </label>
+            <label >Correo:
+                <input type="email" name="correo" id="correo" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend >Genero:</legend>
+            <label >Hombre
+                <input type="radio" name="genero" id="hombre" value="hombre" required>
+            </label>
+            <label >Mujer
+                <input type="radio" name="genero" id="mujer" value="mujer" required>
+            </label>
+            </legend>
         </fieldset>
         <button type="submit">Registrar</button>
     </form>
