@@ -46,7 +46,27 @@
             <label >Mujer
                 <input type="radio" name="genero" id="mujer" value="mujer" required>
             </label>
-            </legend>
+        </fieldset>
+        <fieldset>
+            <legend >Eventos:</legend>
+            <label for="evento">Selecciona el evento:</label>
+            <select name="evento" id="evento">
+                <option value="conferencia_tec">Conferencia Tecnologica</option>
+                <option value="webinar_seo">Webinar sobre SEO</option>
+                <option value="taller_cloud">Taller sobre Cloud Computing</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend >Ciudades de Eventos:</legend>
+            <label for="ciudad">Ciudad:</label>
+            <input list="ciudades" id="ciudad" name="ciudad">
+            <datalist id="ciudades">
+                <option value="Madrid">
+                <option value="Barcelona">
+                <option value="Valencia">
+                <option value="Sevilla">
+                <option value="Bilbao">
+            </datalist>
         </fieldset>
         <button type="submit">Registrar</button>
     </form>
