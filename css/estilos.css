@@ -59,6 +59,17 @@ li {
   /* color: rgba(42, 158, 42, 0.9);*/
 }
 
+p::before {
+  content: ">> ";
+  color: blue;
+  font-size: 20px;
+}
+
+p::first-line {
+  color: red;
+  text-transform: uppercase;
+}
+
 /* h2 {
   all: inherit;
 } */
